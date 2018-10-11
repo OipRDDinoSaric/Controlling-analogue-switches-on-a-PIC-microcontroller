@@ -1,0 +1,19 @@
+matlab kod
+
+
+s = serial('COM4') // gledam u Device Magangeru na koji port je spojena plocica
+set(s,'BaudRate',1200)
+fopen(s)
+fwrite(s,10) // Upisujem stanje sklopke
+fread(s,4)   // Ispisuje stanje sklopke i uneseni podatak output je: X,Y,Z, uneseni podatak
+
+Input fwrite-> znacenje
+
+10	-	Niska razina na port A => spojen X i X0
+11	-	Visoka razina na port A => spojen X i X1
+
+20	-	Niska razina na port B => spojen Y i Y0
+21	-	Visoka razina na port B => spojen Y I Y1
+
+30	-	Niska razina na port C => spojen Z i Z0
+31	-	Visoka razina na port C => spojen Z i Z1

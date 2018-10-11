@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/LPCUSBDK_16F1459/production\gotovo.X.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>8192</length>
+      <used>4272</used>
+      <free>3920</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>1024</length>
+      <used>539</used>
+      <free>485</free>
+    </memory>
+  </executable>
+</project>
